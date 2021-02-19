@@ -1,2 +1,3 @@
 # React-Summer
-#React Native
+#React
+#JavaScript Summer
