@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux'

@@ -1,6 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 
+const initialState = [
+    
+]
+
 const counterSlice = createSlice({
     name: 'counter',
     initialState: {
@@ -17,7 +21,7 @@ const counterSlice = createSlice({
         setName: (state, action)=>{
             state.name = action.payload
         }
-    }
+    },
 })
 
 export const getDataFromAPI = ()=>async(dispatch)=>{
@@ -25,6 +29,17 @@ export const getDataFromAPI = ()=>async(dispatch)=>{
     dispatch(setName(res.data))
 }
 
+const fetchUserById = userId => {
+    return async (dispatch, getSatate)=>{
+        try {
+            const user = await userAPI.user()
+        }
+        catch(err) {
+            console.log(err)
+        }
+    }
+}
+
 export const { decrement, increment, setName } = counterSlice.actions
 
-export default CounterSlice = counterSlice.reducer
+export default counterSlice = counterSlice.reducers
