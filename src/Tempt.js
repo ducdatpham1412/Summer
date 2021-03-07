@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { Provider } from 'react-redux'
-import One from './One'
-import SummerStore from './app/store'
-
-const Tempt = () => {
-    return (
-        <Provider store={SummerStore}>
-            <One />
-        </Provider>
-=======
 import React, {useState} from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Image, FlatList } from 'react-native'
 import ImagePicker from 'react-native-image-picker'
@@ -50,16 +37,11 @@ const Tempt = () => {
             </TouchableOpacity>
             
         </View>
->>>>>>> 88100b03a8970422ee9453b891dd370d3618a862
     )
 }
 
 export default Tempt
 
-<<<<<<< HEAD
-const styles = StyleSheet.create({})
-
-=======
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -69,4 +51,3 @@ const styles = StyleSheet.create({
 })
 
 /// Ta da tung o day
->>>>>>> 88100b03a8970422ee9453b891dd370d3618a862

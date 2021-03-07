@@ -3,7 +3,7 @@ import counterSlice from '../counter/counterSlice'
 
 const SummerStore = configureStore({
     reducer: {
-        counterSlice
+        counter: counterSlice
     }
 })
 export default SummerStore
