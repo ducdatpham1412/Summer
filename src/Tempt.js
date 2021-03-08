@@ -19,3 +19,4 @@ const styles = StyleSheet.create({
 })
 
 // commit tempt lan 1
+// commit tempt lan 2
