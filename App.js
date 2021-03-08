@@ -1,12 +1,11 @@
 import React from 'react'
-import Tempt from './src/Tempt'
-import Login from './src/Login'
-import One from './src/One'
 import LaunchImageToList from './src/LaunchImageToList'
+import Tempt from './src/Tempt'
+import Redux from './src/redux example/Redux'
 
 const App = () => {
   return (
-    <Tempt />
+    <Redux />
   )
 }
 
