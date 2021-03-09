@@ -5,7 +5,7 @@ import Redux from './src/redux example/Redux'
 
 const App = () => {
   return (
-    <Redux />
+    <Tempt />
   )
 }
 
