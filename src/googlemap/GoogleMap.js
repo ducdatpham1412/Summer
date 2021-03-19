@@ -3,8 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { NavigationContainer, useNavigation } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import UpdateLocation from './UpdateLocation'
-import Moving from './Moving'
+import FittingTheScreen from './FittingTheScreen'
 
 
 const MainScreen = () => {
@@ -14,16 +13,9 @@ const MainScreen = () => {
         <View style={styles.container}>
             <TouchableOpacity
                 style={styles.button}
-                onPress={()=>navigation.navigate('updateLocation')}
+                onPress={()=>navigation.navigate('fittingTheScreen')}
             >
-                <Text>To Update Location</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-                style={styles.button}
-                onPress={()=>navigation.navigate('moving')}
-            >
-                <Text>Moving</Text>
+                <Text>Fitting The Screen</Text>
             </TouchableOpacity>
         </View>
     )
@@ -43,6 +35,7 @@ const GoogleMap = () => {
                 <Stack.Screen name='mainScreen' component={MainScreen} />
                 <Stack.Screen name='updateLocation' component={UpdateLocation} />
                 <Stack.Screen name='moving' component={Moving} />
+                <Stack.Screen name='fittingTheScreen' component={FittingTheScreen} />
             </Stack.Navigator>
         </NavigationContainer>
 
